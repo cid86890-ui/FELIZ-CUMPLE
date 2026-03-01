@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <title>Feliz Cumpleaños MIRANDA</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="mobile.css"
+      media="only screen and (max-width: 800px)"
+    />
+  </head>
+  <body>
+    <!--Confeti Atras-->
+    <canvas id="canvas1"></canvas>
+
+    <div class="contenedor">
+      <!-- PortaRetrato -->
+      <div class="portaretrato-torta-caja">
+        <div class="portaretrato">
+          <div class="marco">
+            <img src="/recursos/cumpleañero.png" alt="Foto"/>
+          </div>
+          <div class="soporte-marco"></div>
+        </div>
+
+        <!--Torta De Cumpleaños-->
+        <div class="torta-cumpleaños">
+          <div class="torta">
+            <div class="chocolate"></div>
+          </div>
+          <div class="vela"></div>
+          <div class="llama"></div>
+        </div>
+
+        <!--Caja De Regalo-->
+        <div class="caja-wrapper">
+          <div class="caja">
+            <div class="cinta-de-regalo">
+              <div class="cinta-de-regalo-izquierda"></div>
+              <div class="cinta-de-regalo-derecha"></div>
+              <div class="cinta-de-regalo-centro"></div>
+            </div>
+            <div class="regalos">
+              <div class="regalo-sombra"></div>
+            </div>
+            <div class="regalo"></div>
+            <div class="icono-estrella estrella1"></div>
+            <div class="icono-estrella estrella2"></div>
+            <div class="icono-estrella estrella3"></div>
+            <div class="icono-estrella estrella4"></div>
+            <div class="icono-estrella estrella5"></div>
+          </div>
+        </div>
+
+        <!--Mensaje Feliz Cumpleaños-->
+        <div class="happy-birthday"> Happy Birthday Miranda 👑</div>
+      </div>
+
+      <!--Mesa-->
+      <div class="soporte"></div>
+    </div>
+
+    <!-- Carta Modal -->
+    <div class="modal-carta" id="modalCarta">
+      <div class="contenido-carta">
+        <div class="carta">
+          <h2> MIRANDA</h2>
+          <p>
+        𓂀 ¡𝐹𝑒𝓁𝒾𝓏 𝒸𝓊𝓂𝓅𝓁𝑒𝒶ñ𝑜𝓈 𝓅𝑒𝓆𝓊𝑒ñ𝒶! 𝐸𝓇𝑒𝓈 𝓊𝓃𝒶 𝓅𝑒𝓇𝓈𝑜𝓃𝒶 𝓂𝒶𝓇𝒶𝓋𝒾𝓁𝓁𝑜𝓈𝒶 𝓎 𝓉𝑒 𝓂𝑒𝓇𝑒𝒸𝑒𝓈 𝓁𝑜 𝓂𝑒𝒿𝑜𝓇 𝓆𝓊𝑒 𝓁𝒶 𝓋𝒾𝒹𝒶 𝓉𝑒 𝓅𝓊𝑒𝒹𝒶 𝑜𝒻𝓇𝑒𝒸𝑒𝓇. 𝒬𝓊𝑒 𝓈𝒾𝑔𝒶𝓈 𝒸𝓊𝓂𝓅𝓁𝒾𝑒𝓃𝒹𝑜 𝓉𝑜𝒹𝒶𝓈 𝓉𝓊𝓈 𝓂𝑒𝓉𝒶𝓈 𝓈𝒾𝓃 𝒾𝓂𝓅𝑜𝓇𝓉𝒶𝓇 𝓁𝑜𝓈 𝑜𝒷𝓈𝓉á𝒸𝓊𝓁𝑜𝓈 ¡𝓎𝑜 𝒸𝓇𝑒𝑜 𝑒𝓃 𝓉𝒾! 
+         𝒬𝓊𝑒 𝓁𝒶 𝓅𝒶𝓈𝑒𝓈 𝓂𝓊𝓎 𝒷𝑜𝓃𝒾𝓉𝑜 𝑒𝓃 𝒸𝑜𝓂𝓅𝒶ñí𝒶 𝒹𝑒 𝒶𝓂𝒾𝑔𝑜𝓈 𝓎 𝒻𝒶𝓂𝒾𝓁𝒾𝒶𝓇𝑒𝓈. ¡𝑀𝓊𝒸𝒽𝒶𝓈 𝒻𝑒𝓁𝒾𝒸𝒾𝒹𝒶𝒹𝑒𝓈! 🌻𓂀
+        </p>
+          <p class="firma">Con afecto,<br />Diego</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Confeti Delante-->
+    <canvas id="canvas2"></canvas>
+
+    <!--Todo Oscuro-->
+    <!--src=/proyectos/feliz cumpleaños/recursos/soplar1.mp3-->
+    <audio id="soplido" src="/recursos/soplar1.mp3" preload="auto"></audio>
+    <audio id="cancion" src="/recursos/cancion.mp3" preload="auto"></audio>
+    <div class="overlay"></div>
+
+    <script src="Confeti.js"></script>
+    <script src="Confeti2.js"></script>
+    <script src="Sorpresa.js"></script>
+  </body>
+</html>
+
+
